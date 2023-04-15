@@ -10,6 +10,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -21,7 +25,7 @@ header nav {
 }
 
 header nav .nav-right-section {
-    width: 250px;
+    width: 300px;
     height: auto;
     display: flex;
     list-style: none;
@@ -30,22 +34,46 @@ header nav .nav-right-section {
 }
 
 nav .nav-right-section a {
-    margin-right: 10px;
+    margin-right: 13px;
     color: black;
+
+}
+
+nav .nav-right-section .imagenes {
+    margin-right: 20px;
 }
 
 nav .nav-right-section .menu-icon {
-    background-image: url('https://github.com/AlyoshkaKaramazov/Google-Clone/blob/master/styles/pictures/google%20apps%20menu%20icon.png');
+    background-image: url('./pictures/google-apps-menu-icon.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav .nav-right-section img {
-    border-radius: 50%;
-    margin-left: 10px;
+nav .nav-right-section .menu-icon:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 100%;
+    box-shadow: 0 0 0 7px #f0f0f0;
+}
+
+nav .nav-right-section button {
+    background-color: #1a73e8;
+    color: #f7faff;
+    width: 100px;
+    margin-right: 25px;
+    height: 34px;
+    border: none;
+    border-radius: 7px;
+}
+
+nav .nav-right-section button:hover {
+    cursor: pointer;
+    background-color: #1b66c9;
 }
 
 main {
@@ -133,6 +161,7 @@ main .main-buttons button:hover {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px #dadce0;
     color: #202124;
+    cursor: pointer;
 }
 
 footer {
